@@ -4,6 +4,7 @@ const { MONGO_URL } = require("./env");
 const connectDb = async () => {
   try {
     const connect = await mongoose.connect(MONGO_URL, {
+      // Database Name
       dbName: "expenseTracker",
     });
     console.log(
